@@ -1,0 +1,2 @@
+# Muallim
+muallim_uz
