@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muallim O‘quv Markazi - Biz bilan bog‘lanish</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+(function(){ emailjs.init("7dw90rNlieeX8vpa9"); })();
+</script>
+</head>
+<body>
+
+<header>Muallim o‘quv markazi</header>
+
+<div class="container">
+<h2>Biz bilan bog‘lanish</h2>
+<input type="text" id="name" placeholder="Ismingiz">
+<input type="email" id="email" placeholder="Emailingiz">
+<input type="text" id="title" placeholder="Mavzu">
+<textarea id="message" placeholder="Xabaringizni yozing"></textarea>
+<button onclick="sendContact()">Yuborish</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

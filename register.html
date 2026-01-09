@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muallim o‘quv markazi - Ro‘yxatdan o‘tish</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>emailjs.init("7dw90rNlieeX8vpa9");</script>
+</head>
+<body>
+
+<header>Muallim o‘quv markazi</header>
+
+<div class="container">
+  <h2>Ro‘yxatdan o‘tish</h2>
+  <input id="name" placeholder="Ism" type="text">
+  <input id="email" placeholder="Email" type="email">
+  <select id="country">
+    <option value="+998">🇺🇿 +998</option>
+    <option value="+7">🇷🇺 +7</option>
+    <option value="+1">🇺🇸 +1</option>
+  </select>
+  <input id="phone" placeholder="Telefon raqam" type="tel">
+  <input id="password" placeholder="Parol" type="password">
+
+  <!-- CAPTCHA (botdan himoya) -->
+  <p id="captchaQuestion"></p>
+  <input id="captchaAnswer" placeholder="Javobni kiriting">
+
+  <button onclick="register()">Davom etish</button>
+  <p id="error"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

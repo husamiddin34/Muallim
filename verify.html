@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emailni tasdiqlash</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>emailjs.init("7dw90rNlieeX8vpa9");</script>
+</head>
+<body>
+
+<header>Muallim o‘quv markazi</header>
+
+<div class="container">
+  <h2>Emailni tasdiqlash</h2>
+  <input id="code" placeholder="6 xonali kod" type="text">
+  <button id="verifyBtn">Tasdiqlash</button>
+  <button id="resendBtn">🔄 Kodni qayta yuborish</button>
+
+  <p id="msg" style="margin-top:10px;"></p>
+
+  <!-- Keyingi sahifaga o'tish tugmasi -->
+  <button id="nextPageBtn" style="display:none; margin-top:20px;" onclick="goNextPage()">➡️ Keyingi sahifa</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("verifyBtn").addEventListener("click", verify);
+  document.getElementById("resendBtn").addEventListener("click", resendCode);
+</script>
+</body>
+</html>

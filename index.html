@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muallim O‘quv Markazi - Ro‘yxatdan o‘tish</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("7dw90rNlieeX8vpa9");
+  })();
+</script>
+</head>
+<body>
+
+<header>
+Muallim o‘quv markazi
+<button id="darkModeToggle" onclick="toggleDarkMode()">🌙</button>
+</header>
+
+<div class="container">
+<h2>Ro‘yxatdan o‘tish</h2>
+
+<input type="text" id="name" placeholder="Ismingiz">
+<input type="email" id="email" placeholder="Emailingiz">
+
+<select id="country">
+  <option value="+998" data-minlength="9">🇺🇿 +998</option>
+  <option value="+7" data-minlength="10">🇷🇺 +7</option>
+  <option value="+1" data-minlength="10">🇺🇸 +1</option>
+</select>
+
+<input type="text" id="phone" placeholder="Telefon raqam">
+<input type="password" id="password" placeholder="Parol">
+
+<button onclick="register()">Davom etish</button>
+<p id="error" class="error"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<p id="captchaQuestion"></p>
+<input type="text" id="captchaAnswer" placeholder="Javobni kiriting">
